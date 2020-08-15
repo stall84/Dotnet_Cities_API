@@ -20,7 +20,8 @@ namespace CityInfo.API
         {
             services.AddMvc(options => 
             {
-                options.EnableEndpointRouting = false; 
+                options.EnableEndpointRouting = false;
+                options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
             });
             
               
