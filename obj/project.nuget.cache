@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "bNSiYq6K8m+5n4mhRiRt4K8LctR8TZUrruIs5WR5IvCiBlXwNIR5+Q3WnNcuI8Xw22v54uzvhbgZfTkyMYkLrA==",
+  "dgSpecHash": "vJb0b3FbRk4bED69v1Wu9uo3bgWo+ONUiFzJyu2Zi7FpE1iq7Fws5wk23HZKTxPiKlQIAa8ZKqZkNwtHFlb8Kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\stall\\Desktop\\Dotnet_Projects\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.7\\microsoft.aspnetcore.jsonpatch.3.1.7.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.7\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.7.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
