@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc;
-
+using CityInfo.API.Services;
 
 namespace CityInfo.API
 {
@@ -26,6 +26,8 @@ namespace CityInfo.API
                 options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
             })
                 .AddNewtonsoftJson();
+
+            services.AddTransient<LocalMailService>();
            
                
             

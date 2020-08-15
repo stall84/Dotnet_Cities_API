@@ -20,6 +20,10 @@ C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreap
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\obj\Debug\netcoreapp3.1\CityInfo.API.csproj.CopyComplete
+C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\nlog.config
+C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\obj\Debug\netcoreapp3.1\CityInfo.API.csproj.CoreCompileInputs.cache
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\obj\Debug\netcoreapp3.1\CityInfo.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\obj\Debug\netcoreapp3.1\CityInfo.API.csproj.CopyComplete
