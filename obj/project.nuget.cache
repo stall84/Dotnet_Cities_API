@@ -1,14 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "vJb0b3FbRk4bED69v1Wu9uo3bgWo+ONUiFzJyu2Zi7FpE1iq7Fws5wk23HZKTxPiKlQIAa8ZKqZkNwtHFlb8Kw==",
+  "dgSpecHash": "cok9FW7AsWET9JoJH7qSuBlQox9rQ3SgRTRZ0sTGm0C/oHhUG6JgJduoK/DPoN4LoagV0s+/t1usU/Trow8cJQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\stall\\Desktop\\Dotnet_Projects\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stall\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.7\\microsoft.aspnetcore.jsonpatch.3.1.7.nupkg.sha512",
     "C:\\Users\\stall\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.7\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.7.nupkg.sha512",
     "C:\\Users\\stall\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.0\\microsoft.extensions.configuration.3.0.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.0\\microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.0.0\\microsoft.extensions.configuration.binder.3.0.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.0\\microsoft.extensions.dependencyinjection.3.0.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.logging\\3.0.0\\microsoft.extensions.logging.3.0.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.0\\microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
     "C:\\Users\\stall\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
-    "C:\\Users\\stall\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    "C:\\Users\\stall\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\nlog\\4.7.2\\nlog.4.7.2.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\nlog.extensions.logging\\1.6.4\\nlog.extensions.logging.1.6.4.nupkg.sha512",
+    "C:\\Users\\stall\\.nuget\\packages\\nlog.web.aspnetcore\\4.9.3\\nlog.web.aspnetcore.4.9.3.nupkg.sha512"
   ],
   "logs": []
 }

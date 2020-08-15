@@ -1,7 +1,9 @@
 ﻿using CityInfo.API.Models;
+using CityInfo.API.Services;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,17 +18,52 @@ namespace CityInfo.API.Controllers
     [Route("api/cities/{cityId}/pointsofinterest")]
     public class PointsOfInterestController : ControllerBase
     {
+        // Adding logger and mailService fields of setup using Constructor injection
+        private readonly ILogger<PointsOfInterestController> _logger;
+        private readonly LocalMailService _mailService;
+
+        // Below is our Constructor for this class. We will create the Logger service and Mail Service calls
+        public PointsOfInterestController(ILogger<PointsOfInterestController> logger,
+            LocalMailService mailService)
+        {
+            // Creating our logger and mailservice object & Using null-checking null-coalescing operator (??) Returns value of left hand operand if not null, if null, returns whatever
+            // action on the right hand operand
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _mailService = mailService ?? throw new ArgumentNullException(nameof(mailService));
+        }
+
+        //--------------------//
+        // Controller Actions //
+        //--------------------//
+
         [HttpGet]
         public IActionResult GetPointsOfInterest(int cityId)
         {
-            var city = CitiesDataStore.Current.Cities
-                    .FirstOrDefault(q => q.Id == cityId);
-            if (city == null)
+            // We want to try and handle exceptions with a try/catch block. Log the error as critical, and return a 500 Server Error
+            // To show we can handle exceptions in orderly manner
+            try
             {
-                return NotFound();
-            }
+                var city = CitiesDataStore.Current.Cities
+                   .FirstOrDefault(q => q.Id == cityId);
+                if (city == null)
+                {
+                    // create log of error and print template string with route being passed
+                    _logger.LogInformation($"City with id {cityId} Not Found when accessing Points of interest");
+                    return NotFound();
+                }
 
-            return Ok(city.PointsOfInterest);
+                return Ok(city.PointsOfInterest);
+
+            }
+            catch ( Exception ex)
+            {
+                // Create critical log of exception with message and pass in the exception object (ex)
+                _logger.LogCritical($"Exception while retrieving points of interest for city with id {cityId}", ex);
+                // Since we're handling this exception manually, we will need to return a status code with message instead of 
+                // throw block
+                return StatusCode(500, "A problem occurred while handling your request");
+            }
+           
         }
 
         [HttpGet("{id}", Name = "GetPointOfInterest")]
@@ -227,7 +264,13 @@ namespace CityInfo.API.Controllers
             }
 
             // Very simple DELETE statement. Remove the route-specified POI from the DataStore
+
             city.PointsOfInterest.Remove(pointOfInterestFromStore);
+
+            // After deleting the point of interest we want to send a (mock) email regarding the deletion
+
+            _mailService.Send("Point of Interest DELETED",
+                $"Point of Interest {pointOfInterestFromStore.Name} with id {pointOfInterestFromStore.Id} was deleted");
 
             return NoContent();
         }
