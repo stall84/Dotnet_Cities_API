@@ -27,14 +27,8 @@ namespace CityInfo.API
             })
                 .AddNewtonsoftJson();
 
-            services.AddTransient<LocalMailService>();
-           
-               
-            
-            
-            
-              
-
+            services.AddTransient<IMailService, LocalMailService>();
+     
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +40,8 @@ namespace CityInfo.API
             }
             else
             {
-                app.UseExceptionHandler();
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
             }
 
             app.UseMvc();
