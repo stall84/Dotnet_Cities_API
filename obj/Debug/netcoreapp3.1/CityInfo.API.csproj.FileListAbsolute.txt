@@ -1,4 +1,3 @@
-C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\CityInfo.API.exe
@@ -27,3 +26,4 @@ C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreap
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\obj\Debug\netcoreapp3.1\CityInfo.API.csproj.CoreCompileInputs.cache
 C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\obj\Debug\netcoreapp3.1\CityInfo.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\stall\Desktop\Dotnet_Projects\CityInfo\CityInfo.API\bin\Debug\netcoreapp3.1\appsettings.Production.json

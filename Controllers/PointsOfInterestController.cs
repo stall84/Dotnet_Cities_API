@@ -20,11 +20,11 @@ namespace CityInfo.API.Controllers
     {
         // Adding logger and mailService fields of setup using Constructor injection
         private readonly ILogger<PointsOfInterestController> _logger;
-        private readonly LocalMailService _mailService;
+        private readonly IMailService _mailService;
 
         // Below is our Constructor for this class. We will create the Logger service and Mail Service calls
         public PointsOfInterestController(ILogger<PointsOfInterestController> logger,
-            LocalMailService mailService)
+            IMailService mailService)
         {
             // Creating our logger and mailservice object & Using null-checking null-coalescing operator (??) Returns value of left hand operand if not null, if null, returns whatever
             // action on the right hand operand

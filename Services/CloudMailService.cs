@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace CityInfo.API.Services
 {
-    // Creating a mock-up email service to be run when exceptions or deletions or anything occurs
-    public class LocalMailService : IMailService
+    public class CloudMailService : IMailService    
     {
         private readonly IConfiguration _configuration;
 
         // Using Constructor Injection to require our appsettings.json file for mail config
-        public LocalMailService(IConfiguration configuration)
+        public CloudMailService(IConfiguration configuration)
         {
             // null check
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
