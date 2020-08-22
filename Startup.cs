@@ -5,11 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using CityInfo.API.Services;
+using CityInfo.API.Contexts;
 
 namespace CityInfo.API
 {
@@ -27,7 +30,15 @@ namespace CityInfo.API
             })
                 .AddNewtonsoftJson();
 
+            // Registering our mock mail-service
             services.AddTransient<IMailService, LocalMailService>();
+            // Registering our DB Context 'controller' . Creating verbatim connection string.
+            // Configuring DBContext to use SQL Server
+            var connectionString = @"Server=(localdb)\mssqllocaldb;Database=CityInfoDB;Trusted_Connection=True;";
+            services.AddDbContext<CityInfoContext>(options =>
+            {
+                options.UseSqlServer(connectionString);
+            });
      
         }
 
